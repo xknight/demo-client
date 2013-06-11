@@ -1,4 +1,4 @@
-QT       += core gui quick qml
+QT       += core gui quick qml widgets
 
 TARGET = demo-client
 TEMPLATE = app

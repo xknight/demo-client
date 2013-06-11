@@ -8,18 +8,11 @@ Rectangle {
 
     Text {
         id: text
+        anchors.centerIn: parent
         text: "Test"
-        verticalAlignment: Text.AlignVCenter
         color: "white"
-        //height: parent.height
-        onHeightChanged: console.log(text.height)
-        Behavior on height { NumberAnimation { } }
-    }
-
-    Timer {
-        running: true
-        repeat: true
-        interval: 500
-        onTriggered: text.height += 10
+        NumberAnimation on anchors.verticalCenterOffset {
+            running: true; from: -10; to: 10; loops: Animation.Infinite
+        }
     }
 }
