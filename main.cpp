@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
     //QWidget view;
     //view.setBackgroundRole(QPalette::Dark);
 
-    view.resize(448, 400);
+    view.resize(600, 400);
     view.show();
 
     return a.exec();

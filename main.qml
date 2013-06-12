@@ -12,7 +12,8 @@ Rectangle {
         text: "Test"
         color: "white"
         NumberAnimation on anchors.verticalCenterOffset {
-            running: true; from: -10; to: 10; loops: Animation.Infinite
+            running: true; from: -20; to: 20; loops: Animation.Infinite
+            easing.type: Easing.CosineCurve; duration: 3000
         }
     }
 }
